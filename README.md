@@ -8,3 +8,8 @@
   3. git remote add git@github.com:VizardAlee/e-commerce-website.git
   4. git commit -m "Initial Commit"
   5. git push origin main
+3. List Products
+  1. create product type
+  2. create product array
+  3. add product images
+  4. render products
