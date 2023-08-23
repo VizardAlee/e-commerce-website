@@ -22,5 +22,9 @@ img.large {
 }
 
 img.thumbnail {
-  max-height: 80px;
+  height: 80px;
+}
+
+.small-container {
+  max-width: 600px;
 }
