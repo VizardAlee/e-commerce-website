@@ -27,7 +27,7 @@ orderRouter.post(
         totalPrice: req.body.totalPrice,
         user: req.user._id,
       })
-      res.status(201).json({ message: 'Order Not Found', order: createdOrder })
+      res.status(201).json({ message: 'Order Created', order: createdOrder })
     }
   })
 )
