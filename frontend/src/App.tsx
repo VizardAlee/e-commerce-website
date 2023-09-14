@@ -1,5 +1,5 @@
 import { useContext, useEffect } from 'react'
-import { Badge, Button, Container, Form, FormControl, InputGroup, Nav, NavDropdown, Navbar } from 'react-bootstrap'
+import { Button, Container, Form, FormControl, InputGroup, Nav, NavDropdown, Navbar } from 'react-bootstrap'
 import { Link, Outlet } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap'
 import { ToastContainer } from 'react-toastify'

@@ -1,5 +1,18 @@
 {
   "dependencies": {
-    "mongodb": "^5.7.0"
-  }
+    "dotenv": "^16.3.1",
+    "mongodb": "^5.8.1"
+  },
+  "name": "tn-mern-amazona",
+  "description": "## Lessons 1. Create TypeScript React App By Vite 2. Create Git Repository   1. git init   2. git add .   3. git remote add git@github.com:VizardAlee/e-commerce-website.git   4. git commit -m \"Initial Commit\"   5. git push origin main 3. List Products   1. create product type   2. create product array   3. add product images   4. render products",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd backend && npm install && npm run build && cd ../frontend && npm install && npm run build",
+    "start": "TG_ALLOW_MIXED=ALLOW node backend/build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {}
 }

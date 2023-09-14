@@ -12,8 +12,9 @@ import { toast } from "react-toastify";
 import { PayPalButtons, PayPalButtonsComponentProps, SCRIPT_LOADING_STATE, usePayPalScriptReducer } from "@paypal/react-paypal-js";
 
 export default function OrderPage() {
-  const { state } = useContext(Store)
-  const { userInfo } = state
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  useContext(Store)
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
   const params = useParams()
   const { id: orderId } = params
@@ -22,7 +23,7 @@ export default function OrderPage() {
 
   const { mutateAsync: payOrder, isLoading: loadingPay } = usePayOrderMutation()
 
-  const testPayHandler = async () => {
+  const testPayHandler = async() => {
     await payOrder({ orderId: orderId! })
     refetch()
     toast.success('Order is Paid')
@@ -49,11 +50,11 @@ export default function OrderPage() {
       }
       loadPaypalScript()
     }
-  }, [paypalConfig])
+  }, [paypalConfig, paypalDispatch])
 
   const paypalbuttonTransactionProps: PayPalButtonsComponentProps = {
     style: { layout: 'vertical' },
-    createOrder(data, actions) {
+    createOrder(_data, actions) {
       return actions.order.create({
         purchase_units: [
           {
@@ -66,7 +67,7 @@ export default function OrderPage() {
         return orderID
       })
     },
-    onApprove(data, actions) {
+    onApprove(_data, actions) {
       return actions.order!.capture().then(async (details) => {
         try {
           await payOrder({ orderId: orderId!, ...details })
