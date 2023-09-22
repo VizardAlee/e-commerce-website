@@ -81,8 +81,13 @@ a.header-link:hover,
   border: 1px rgb(33, 37, 41) solid;
 }
 
-.sub-header {
-  background-color: #232f3e;
+/* .sub-header { */
+  /* background-color: #747c86; */
+/* } */
+
+.borderless  {
+  border: none;
+  outline: none;
 }
 
 .cart-badge {
