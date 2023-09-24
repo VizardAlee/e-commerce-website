@@ -85,9 +85,12 @@ a.header-link:hover,
   /* background-color: #747c86; */
 /* } */
 
-.borderless  {
+.borderless-link  {
   border: none;
-  outline: none;
+}
+
+.borderless-dropdown {
+  border: none;
 }
 
 .cart-badge {
@@ -96,4 +99,8 @@ a.header-link:hover,
   font-weight: bold;
   margin-left: 16px;
   margin-top: -3px;
+}
+
+.header-link .nav-link {
+  border: none;
 }

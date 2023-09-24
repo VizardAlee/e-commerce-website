@@ -42,17 +42,17 @@ function App() {
   
           <div className='d-flex justify-content-between align-items-centery'>
             <div>
-              <LinkContainer to="/" className='header-link'>
+              <LinkContainer to="/" className='header-link border-0'>
                   <Navbar.Brand>.RUNNR</Navbar.Brand>
               </LinkContainer>
             </div>
 
             <div>
               <Navbar.Collapse>
-                <Nav className='w-100 justify-content-end'>
+                <Nav className='w-100 justify-content-end border-0'>
                   <Link
                     to="#"
-                    className='nav-link header-link'
+                    className='nav-link header-link border-0'
                     onClick={switchModeHandler}
                   >
                     <i
@@ -62,7 +62,7 @@ function App() {
                   </Link>
                   {userInfo ? (
                     <NavDropdown
-                      className='header-link'
+                      className='header-link border-0'
                       title={`Hello, ${userInfo.name}`}
                     >
                       <LinkContainer to='/profile'>
@@ -79,16 +79,16 @@ function App() {
                       > Sign Out </Link>
                     </NavDropdown>
                   ) : (
-                    <NavDropdown className='header-link' title={`Hello, sign in`}>
-                      <LinkContainer to='/signin'>
+                    <NavDropdown className='header-link border-0' title={`Hello, sign in`}>
+                      <LinkContainer to='/signin' className='border-0'>
                         <NavDropdown.Item>Sign In</NavDropdown.Item>
                       </LinkContainer>
                     </NavDropdown>
                   )}
-                  <Link to='/orderhistory' className='nav-link header-link'>
+                  <Link to='/orderhistory' className='nav-link header-link border-0'>
                     Orders
                   </Link>
-                  <Link to='/cart' className='nav-link header-link p-0'>
+                  <Link to='/cart' className='nav-link header-link p-0 border-0'>
                     {
                       <span className="cart-badge">
                         {cart.cartItems.reduce((a, c) =>  a + c.quantity, 0)}
@@ -133,13 +133,13 @@ function App() {
           </div>
           <div className="sub-header">
             <div className="d-flex">
-              <Link to='#' className='nav-link header-link p-1'>
+              <Link to='#' className='nav-link header-link p-1 border-0'>
                 <i className='fas fa-bars'> All</i>
               </Link>
               {["Today's Deal", 'Gifts', 'On Sale'].map((x) => (
                 <Link
                   key={x}
-                  className='nav-link header-link p-1 px-3'
+                  className='nav-link header-link p-1 px-3 border-0'
                   to={`/search?tag=${x}`}
                 >
                   {x}
