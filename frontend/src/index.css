@@ -77,8 +77,44 @@ a.header-link:hover,
   background-color: white;
 }
 
+.container-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.product-card .card-img-top {
+  flex: 1;
+  object-fit: cover;
+}
+
+.product-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .header .dropdown-item a:hover {
   border: 1px rgb(33, 37, 41) solid;
+}
+
+.the-con {
+  margin-bottom: 20px;
 }
 
 /* .sub-header { */
@@ -103,4 +139,12 @@ a.header-link:hover,
 
 .header-link .nav-link {
   border: none;
+}
+
+.the-background {
+  background-color: #5581A1;
+}
+
+.the-grey {
+  background-color: #C4C4C4;
 }
