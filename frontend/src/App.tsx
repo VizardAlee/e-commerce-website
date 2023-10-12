@@ -148,7 +148,7 @@ function App() {
         </header>
       
         <div className='tommy'>
-          <div  className='sidebar'>
+          <div  className='sidebar d-none d-md-block'>
               <div>
                 Today
               </div>
@@ -160,7 +160,7 @@ function App() {
               </div>
           </div>
 
-          <main className='the-grey main'>
+          <main className='the-grey main d-md-block'>
             <div>
               Switch
             </div>

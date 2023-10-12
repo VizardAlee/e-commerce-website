@@ -159,11 +159,10 @@ a.header-link:hover,
 }
 
 .tommy {
-  display: grid;
-  grid-template-columns: 2fr 8fr;
+  display: flex;
 }
 
-
+/* 
 @media (max-width: 768px) {
   .tommy {
     grid-template-columns: 2fr 3fr;
@@ -172,17 +171,19 @@ a.header-link:hover,
   .main {
     flex: 1 !important;
   }
-}
+} */
 
-.main {
+.the-grey.main {
   flex-grow: 1;
   display: grid;
-  grid-template-rows: 10px 4fr 2fr;
+  /* grid-template-rows: 10px 4fr 2fr; */
   padding: 10px;
-  /* height: 100vh; */
+  overflow: auto;
+  height: 100vh;
 }
 
 .sidebar {
+  min-width: 250px;
   display: grid;
   grid-template-rows: 30% 50% 20%;
 }
