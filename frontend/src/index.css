@@ -154,6 +154,8 @@ a.header-link:hover,
 
 .the-grey {
   background-color: #C4C4C4;
+  display: flex;
+  height: 100vh;
 }
 
 .tommy {

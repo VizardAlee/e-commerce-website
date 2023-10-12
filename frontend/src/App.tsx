@@ -65,13 +65,13 @@ function App() {
                   <LinkContainer to="/">
                     <Nav.Link>Market Place</Nav.Link>
                   </LinkContainer>
-                  <LinkContainer to="/">
+                  <LinkContainer to="/financials">
                     <Nav.Link>Financials</Nav.Link>
                   </LinkContainer>
-                  <LinkContainer to="/">
+                  <LinkContainer to="/bookmarks">
                     <Nav.Link>Bookmarks</Nav.Link>
                   </LinkContainer>
-                  <LinkContainer to="/">
+                  <LinkContainer to="/profile">
                     <Nav.Link>Profile</Nav.Link>
                   </LinkContainer>
                 </Nav>
@@ -167,11 +167,6 @@ function App() {
             <div className='prod'>
               <Container className="mt-3 the-con">
                 <Outlet />
-              </Container>
-            </div>
-            <div className='last-box'>
-              <Container className="top-sales">
-                box
               </Container>
             </div>
           </main>
